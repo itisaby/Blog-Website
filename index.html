@@ -9,15 +9,16 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
 
-    <title>Welcome to my Blog</title>
+    <title>AM Blogs</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Arnab Blogs</a>
+            <a class="navbar-brand" href="">Arnab Blogs</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -26,10 +27,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About</a>
+                        <a class="nav-link" href="/about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact.html">contact</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -39,14 +43,12 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Technology</a></li>
                             <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">FeedBack</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -56,11 +58,102 @@
             </div>
         </div>
     </nav>
-    <!-- Alert -->
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Success!</strong> Your form has been submitted successfully
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <!-- End of Navbar -->
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/img1.jpeg" class="d-block w-100 opacity-5" alt="..." height="500">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to my Blog</h2>
+                    <p>Find the latest Technology news, Developmentand Trends</p>
+                    <button class="btn btn-outline-danger">Technology</button>
+                    <button class="btn btn-outline-success">Machine Learning</button>
+                    <button class="btn btn-outline-primary">Web D</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/img2.jpeg" class="d-block w-100 opacity-5" alt="..." height="500">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Machine Learning</h2>
+                    <p>Find the latest Technology news, Developmentand Trends</p>
+                    <button class="btn btn-outline-danger">Technology</button>
+                    <button class="btn btn-outline-success">Machine Learning</button>
+                    <button class="btn btn-outline-primary">Web D</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/img3.jpeg" class="d-block w-100 opacity-5" alt="..." height="500">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Web Development</h2>
+                    <p>Find the latest Technology news, Developmentand Trends</p>
+                    <button class="btn btn-outline-danger">Technology</button>
+                    <button class="btn btn-outline-success">Machine Learning</button>
+                    <button class="btn btn-outline-primary">Web D</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+    <!-- Cards -->
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Coding Conferences</h3>
+                        <div class="mb-1 text-muted">Nov 12</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to
+                            additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" src="https://source.unsplash.com/200x250/?AI,Machine learning" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Technology</strong>
+                        <h3 class="mb-0">Learn Web Development</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" src="https://source.unsplash.com/200x250/?Computer,Coding" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
